@@ -1,0 +1,138 @@
+/*****************Ex1***********************/
+span{
+    float: left;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+:nth-child(even of span){
+
+    background-color: green;
+   transform: translate(0px,20px);
+
+}
+
+/******************Ex2******************/
+
+.hiddenBox{
+    
+    float: left;
+    border: 2px solid black;
+    width: 80px;
+    height: 35px;
+    background-color: rgb(255, 0, 0);
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 2px;
+    
+}
+
+:nth-child(even of .hiddenBox){
+    display: none;
+}
+/********************Ex3**********************/
+
+table{
+    border-spacing: 10px;
+}
+
+td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: green;
+    vertical-align: super;
+    padding-left: 5px;
+    
+    
+}
+ 
+:nth-child(n of .blueBox){
+
+    background-color: blue;
+    font-size: 10px;
+}
+/************************Ex4-1.***************************/
+.lastFive{
+    float: left;
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 242, 247);
+    margin-right: 10px;
+}
+
+:nth-last-child(-n+5 of .lastFive) {
+background-color: orange;
+}
+
+/************************Ex4-2.***************************/
+.firstFive{
+    float: left;
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 242, 247);
+    margin-right: 10px;
+}
+
+:nth-child(-n+5 of .firstFive) {
+
+background-color: orange;
+
+}
+
+/************************Ex4-3.***************************/
+.fourth{
+    float: left;
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 242, 247);
+    margin-right: 10px;
+}
+
+:nth-child(4n of .fourth) {
+
+background-color: orange;
+
+}
+
+/************************Ex4-4.***************************/
+.lastElements{
+    float: left;
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 242, 247);
+    margin-right: 10px;
+}
+
+:nth-child(n+6 of .lastElements) {
+
+background-color: orange;
+
+}
+
+/************************Ex4-5.***************************/
+.noFirst{
+    float: left;
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 242, 247);
+    margin-right: 10px;
+}
+
+:nth-last-child(-n+9 of .noFirst) {
+
+background-color: orange;
+
+}
